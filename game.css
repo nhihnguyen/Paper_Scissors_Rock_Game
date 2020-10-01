@@ -1,0 +1,18 @@
+*{
+	background-color: white;
+}
+table, tr, td, th {
+  	border: 1px solid black;
+  	
+ }
+ #countPaper, #countScissors, #countRock,#displayCount{
+ 	color: blue; 
+ 	font-weight: bold; 
+ }
+#resultDisplay2{
+	color: red; 
+	font-weight: bold;
+	font-size: 40px;
+	padding-left: 200px;
+
+}

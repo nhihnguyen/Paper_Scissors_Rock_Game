@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Paper Scissors Rock Game</title>
+
+	<link rel="stylesheet" href ="game.css">
+	
+	<h1 id="name_input"> User name </h1>
+
+	<script type="text/javascript">
+		var name = window.prompt("please enter your name");
+		document.getElementById("name_input").innerHTML = name+", Welcome to play Paper Scissors Rock game!";
+	</script>
+	
+</head>
+
+<body>
+	
+	<script language="JavaScript" type="text/javascript" src="game.js"> </script>
+
+	<table style = "width:35%">
+		<tr>
+			<td> Your selection: </td>
+			<td></td>
+			<td> Computer </td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="radio" onclick="userChoose();"
+				id="paper" value="paper" name="option">
+  				<label for="paper">Paper</label><br>
+
+  				<input type="radio" onclick="userChoose();"
+  				id="scissors" value="scissors" name="option">
+  				<label for="scissors">Scissors</label><br>
+
+  				<input type="radio" onclick="userChoose();"
+  				id="rock" value="paper" name="option">
+  				<label for="rock">Rock</label>
+  			</td>
+
+			<td> <input type="button" value= "Go!" onclick="go()" id ="play"></td>
+
+			<td> <div id="computerChoose"> </div> </td>	
+		</tr>
+
+		<tr>
+			<td> Your selected:</td>
+
+			<td colspan="2"> <div id = "display"></div> </td>
+		</tr>
+
+		<tr>
+			<td>Computer randomly generated:</td>
+			<td colspan="2"> <div id="computerChoose2"> </div> </td>	
+		</tr>
+
+		<tr>
+			<td> Result:</td>
+			<td colspan="2"> <div id = "resultDisplay"> </div> </div> </td>
+		</tr>
+
+	</table>
+
+	<p> History: You have played total: <span id = "displayCount"> 0 </span> time(s)!. </p>
+
+	<p>Paper: <span id="countPaper"></span> time(s) & Scissors: <span id="countScissors"></span> time(s) & Rock: <span id="countRock"></span> time(s).</p>
+
+	<b id = "resultDisplay2"> </b>
+
+</body>
+
+</html>
